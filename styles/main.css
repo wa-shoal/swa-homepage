@@ -4755,9 +4755,6 @@ table#quickquote-part-table input {
     right: -38px;
 }
 @media (max-width: 660px) {
-.wrapper {
-	padding-right: 0;
-}
 .home-top-block-content-container, 
 .insta-block-container,
 .second-row-blocks-container, 
