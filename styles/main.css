@@ -4733,7 +4733,7 @@ table#quickquote-part-table input {
 }
 .account-download-block h3 {
     margin: 0;
-	padding: 10px 0 0 0;
+	padding: 0;
 }
 .account-download-block p {
     font-size: 18px;
