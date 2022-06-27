@@ -4850,6 +4850,7 @@ table#quickquote-part-table input {
 .brand-logos li {
     float: left;
     width: 100px;
+	margin: 0 12px;
 }
 .brand-logos li:nth-of-type(3),
 .brand-logos li:nth-of-type(4),
