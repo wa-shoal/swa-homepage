@@ -4631,7 +4631,9 @@ table#quickquote-part-table input {
 .popular-categories-container {
     gap: 20px;
     grid-template-columns: repeat(6, 1fr);
-    position: relative;
+}
+.popular-section {
+	position: relative;
 }
 .popular-block {
     box-shadow: 1px 1px 5px 1px #ccc;
@@ -4682,9 +4684,6 @@ table#quickquote-part-table input {
 .insta-block-content p {
     padding: 7px 0 14px 0;
 }
-.insta-image {
-    width: 10%;
-}
 .fa-instagram {
     font-size: 58px;
     color: #b73386;
@@ -4692,6 +4691,7 @@ table#quickquote-part-table input {
 .insta-block-content {
     margin-top: -6px;
     padding-bottom: 5px;
+	margin-left: 15px;
 }
 .brands-container {
     border: 1px solid #ccc;
@@ -4754,7 +4754,7 @@ table#quickquote-part-table input {
 .right-popular-arrow {
     right: -38px;
 }
-@media (max-width: 660px) {
+@media (max-width: 480px) {
 .home-top-block-content-container, 
 .insta-block-container,
 .second-row-blocks-container, 
@@ -4870,5 +4870,79 @@ table#quickquote-part-table input {
 }
 .brand-arrows {
     font-size: 24px;
+}
+}
+@media (min-width: 660px) and (max-width: 1180px) and (orientation: portrait) {
+.home-top-container,
+.insta-quote-container {
+	display: block;
+}
+.second-row-blocks-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+.popular-categories-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+.popular-section {
+    padding: 0 30px;
+}
+.left-popular-arrow {
+    left: -16px;
+}
+.right-popular-arrow {
+    right: -16px;
+}
+.popular-block:nth-of-type(4),
+.popular-block:nth-of-type(5),
+.popular-block:nth-of-type(6) {
+	display: none;
+}
+.quote-text {
+    font-size: 26px;
+}
+.insta-block-content p {
+	font-size: 20px;
+}
+.home-top-left-block,
+.insta-block {
+    margin-bottom: 15px;
+}
+}
+@media (min-width: 660px) and (max-width: 1180px) and (orientation: landscape) {
+.home-top-container,
+.insta-quote-container {
+	display: block;
+}
+.second-row-blocks-container {
+	grid-template-columns: repeat(2, 1fr);
+}
+.popular-categories-container {
+	grid-template-columns: repeat(4, 1fr);
+}
+.popular-section {
+	padding: 0 30px;
+}
+.left-popular-arrow {
+	left: -16px;
+}
+.right-popular-arrow {
+	right: -16px;
+}
+.popular-block:nth-of-type(5),
+.popular-block:nth-of-type(6) {
+	display: none;
+}
+.quote-text {
+	font-size: 26px;
+}
+.insta-block-content p {
+	font-size: 20px;
+}
+.home-top-left-block,
+.insta-block {
+	margin-bottom: 15px;
+}
+.account-download-block p {
+    font-size: 16px;
 }
 }
