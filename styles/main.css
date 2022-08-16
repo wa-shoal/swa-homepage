@@ -1848,9 +1848,9 @@ html > body .nav-main ul ul a:active {
 	.usp-list-item {
 		display: inline-block;
 		vertical-align: top;
-		width: 25%;
 		margin: 0.6875em 0;
 		position: relative;
+		padding: 0 25px;
 	}
 	.usp-list-item .content {
 		display: block;
@@ -1901,10 +1901,10 @@ html > body .nav-main ul ul a:active {
 }
 
 @media all and (min-width: 80em) {
-	.usp-list-item .content {
-		margin-right: 1.25em;
+	/* .usp-list-item .content {
+		margin-right: 1.85em;
 		margin-left: 1.25em;
-	}
+	} */
 }
 
 .slideshow-image-spacer,
@@ -4631,9 +4631,33 @@ table#quickquote-part-table input {
 .popular-categories-container {
     gap: 20px;
     grid-template-columns: repeat(6, 1fr);
+	display: none;
 }
 .popular-section {
 	position: relative;
+}
+@keyframes slide-right {
+	to {
+	   transform: translateX(0)
+	}
+}
+@keyframes slide-left {
+	to {
+	   transform: translateX(-100%)
+	}
+}
+.slide-left {
+	animation: slide-left 0.75s ease-in-out 1 backwards;
+	transform: translateX(0);
+}
+.slide-right {
+	animation: slide-right 0.75s ease-in-out 1 forwards;
+	transform: translateX(-100%);
+}
+.active {
+	display: grid;
+	/* animation: slide 0.75s ease-in-out 1 forwards;
+	transform: translateX(-100%); */
 }
 .popular-block {
     box-shadow: 1px 1px 5px 1px #ccc;
@@ -4652,7 +4676,7 @@ table#quickquote-part-table input {
 }
 .insta-quote-container {
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.5fr 1fr 1fr;
 	margin: 25px 0;
 }
 .insta-quote-block a {
@@ -4667,8 +4691,16 @@ table#quickquote-part-table input {
 .quote-block {
     background: #009661;
 }
-.quote-block {
-    background: #009661;
+.cpd-block {
+	background: #ea252d;
+}
+.cpd-block h4 {
+    margin: 0;
+    font-family: 'Titillium Web';
+    font-weight: 400;
+}
+.quote-block,
+.cpd-block {
     display: flex;
     align-items: center;
     justify-content: center;
