@@ -4694,6 +4694,15 @@ table#quickquote-part-table input {
 .cpd-block {
 	background: #ea252d;
 }
+.cpd-content-container {
+    display: flex;
+}
+.cpd-image {
+    width: 35%;
+}
+.cpd-content {
+    width: 65%;
+}
 .cpd-block h4 {
     margin: 0;
     font-family: 'Titillium Web';
