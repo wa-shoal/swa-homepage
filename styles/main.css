@@ -4704,6 +4704,7 @@ table#quickquote-part-table input {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .quote-text {
     font-size: 30px;
