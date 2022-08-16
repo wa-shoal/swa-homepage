@@ -4786,7 +4786,7 @@ table#quickquote-part-table input {
 .right-popular-arrow {
     right: -38px;
 }
-@media (max-width: 480px) {
+@media (max-width: 660px) {
 .home-top-block-content-container, 
 .insta-block-container,
 .second-row-blocks-container, 
@@ -4846,9 +4846,9 @@ table#quickquote-part-table input {
     margin: 20px 0 40px 0;
 }
 .popular-categories-container {
-	overflow-x: scroll;
+    overflow-x: scroll;
     overflow-y: hidden;
-	padding: 10px;
+    padding: 10px;
 }
 .popular-categories-container::-webkit-scrollbar {
     display: none;
@@ -4869,7 +4869,8 @@ table#quickquote-part-table input {
 	padding: 0;
 	font-size: 26px;
 }
-.insta-block {
+.insta-block,
+.quote-block {
     margin-bottom: 15px;
 }
 .insta-block-content p {
@@ -4882,7 +4883,7 @@ table#quickquote-part-table input {
 .brand-logos li {
     float: left;
     width: 100px;
-	margin: 0 12px;
+    margin: 0 12px;
 }
 .brand-logos li:nth-of-type(3),
 .brand-logos li:nth-of-type(4),
